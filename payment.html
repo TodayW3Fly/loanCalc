@@ -3,12 +3,12 @@
 <head>
 <title>Loan Calculator</title>
 <script>
-Function calc(){
-  let r = document.getElementById("r").value;
-  let PV = document.getElementById("PV").value;
-  let n = document.getElementById("n").value;
-  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-  document.getElementById("ans").innerHTML = P.toFixed(2);
+function calc() {
+let r = document.getElementById("r").value;
+let PV = document.getElementById("PV").value;
+let n = document.getElementById("n").value;
+let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+document.getElementById("ans").innerHTML = P.toFixed(2);
 }
 </script>
 </head>
