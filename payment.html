@@ -8,7 +8,7 @@ let r = document.getElementById("r").value;
 let PV = document.getElementById("PV").value;
 let n = document.getElementById("n").value;
 let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-document.getElementById("ans").innerHTML = P.toFixed(2);
+document.getElementById("ans").innerHTML = "With a loan of $"+ PV +" that you are paying off for "+ n +" years at a "+ r +"% interest rate then your monthly payment is $"+ P.toFixed(2) +" per month";
 }
 </script>
 </head>
@@ -28,9 +28,8 @@ $<input id = "PV"> amount you owe, or are expecting to borrow<br>
 
 <br>
   
-<p>
-  The answer is <span id = "ans">______</span>
-</p>
+<span id = "ans"></span>
+
 <br>
   
 <hr>
